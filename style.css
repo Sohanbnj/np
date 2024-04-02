@@ -11,17 +11,6 @@ body {
     background-color: rgb(255, 255, 255);
     height: 400vh;
 }
-@media screen and (max-width: 660px) {
-    /* Add styles to adjust layout for smaller screens */
-    /* For example: */
-    body {
-        font-size: 14px;
-    }
-    .container {
-        width: 90%;
-    }
-}
-
 
 .head {
     height: 87vh;
@@ -431,6 +420,10 @@ h3 {
     padding: 20px 60px 30px 40px;
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
+body {
+    overflow-y: auto;
+}
+
 
 .klol {
     background-image: url(nananananan.jpg);
@@ -776,7 +769,6 @@ h5 {
         display: none;
     }
 }
-
 @media(max-width: 610px) {
     /* Other CSS rules */
 
@@ -798,5 +790,15 @@ h5 {
     /* Add this rule to hide vertical scrollbar */
     body {
         overflow-x: hidden;
+    }
+}
+@media screen and (max-width: 660px) {
+    /* Add styles to adjust layout for smaller screens */
+    /* For example: */
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
     }
 }
