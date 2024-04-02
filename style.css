@@ -26,7 +26,7 @@ body {
 .head {
     height: 87vh;
     width: 100%;
-    background-image: url(/image/background.jpg);
+    background-image: url(background.jpg);
     background-color: linear-gradient(rgba(4, 9, 30, 80) rgba(4, 9, 30, 80)),;
     background-position: center center;
     background-size: cover;
@@ -433,7 +433,7 @@ h3 {
 }
 
 .klol {
-    background-image: url(/image/nananananan.jpg);
+    background-image: url(nananananan.jpg);
     background-color: linear-gradient(rgba(4, 9, 30, 80) rgba(4, 9, 30, 80)),;
     background-position: center center;
     background-size: cover;
