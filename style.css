@@ -6,9 +6,7 @@
 html {
     scroll-behavior: smooth;
 }
-body {
-    overflow-y: auto;
-}
+
 
 body {
     background-color: rgb(255, 255, 255);
@@ -789,6 +787,6 @@ h5 {
 
     /* Add this rule to hide vertical scrollbar */
     body {
-        overflow-y: hidden;
+        overflow-y: auto;
     }
 }
