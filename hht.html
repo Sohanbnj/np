@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Ticket</title>
+    <link rel="stylesheet" href="sty.css">
+</head>
+<body>
+<div class="container">
+        <h2>Enter Reference Code to Buy Ticket</h2>
+        <div class="otpverify">
+        <input type="text"  placeholder="Enter Reference Code" id="otp_inp">
+        </div>
+        <button type="submit" id="getCodeBtn" class="btn" onclick="sendOTP() ">Get Code</button>
+<!-- Corrected onclick attribute -->
+        <button id="otp_btn" class="btn" onclick="buyTicket()">Buy Ticket</button>
+        <p class="oolo">Didn't Received The OTP Click <a  href="https://blogsodextech.blogspot.com/2024/04/unveiling-mechanics-of-sodex-your.html" target="_blank">Here</a></p>
+</div>
+   
+</body>
+<script src="scripto.js"></script>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</html>

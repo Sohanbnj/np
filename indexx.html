@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Get Quote</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link rel="stylesheet" href="stylee.css">
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+</head>
+<body>
+<div class="navbar">
+    <img src="Screenshot_from_2024-01-03_18-14-40-removebg-preview.png" height=60 width=140 class="companylogo"></div>
+</div>
+<div class="container">
+<h3 class="getquotetext">Get A Ticket</h3>
+    
+    <div class="blocks">
+    <!-- partial:index.partial.html -->
+        <div class="left">
+            <div class="triptype">
+                <button type="button" class="one-way-button">Get A Ticket</button>
+            </div>
+            <p>Issues</p>
+<div class="select" id="GHk">
+    <div class="selectBtn" data-type="firstOption"><i class="fas fa-laptop"></i>Laptop</div>
+    <div class="selectDropdown">
+        <div class="option" data-type="firstOption"><i class="fas fa-mobile-alt"></i>Mobile</div>
+        <div class="option" data-type="secondOption"><i class="fas fa-code"></i>Software Issues</div>
+        <div class="option" data-type="thirdOption"><i class="fas fa-ellipsis-h"></i>Other</div>
+    </div>
+</div>
+<p>For</p>
+<div class="select" id="hgh">
+    <div class="selectBtn" data-type="firstOption"><i class="fas fa-desktop"></i></div>
+    <div class="selectDropdown">
+        <div class="option" data-type="firstOption"><i class="fas fa-tools"></i>Fixing</div>
+        <div class="option" data-type="secondOption"><i class="fas fa-search"></i>Checking</div>
+        <div class="option" data-type="thirdOption"><i class="fas fa-chalkboard-teacher"></i>Teaching</div>
+    </div>
+</div>
+
+            <p>Fixing Date</p>
+            <div class="date-input-container">
+                <i class="fas fa-calendar-alt date-icon"></i>
+                <input class="date-input-field " type="text" id="sourcedatepicker" placeholder="mm/dd/yyyy">
+            </div>
+            <p>Last Fixing Date</p>
+            <div class="date-input-container">
+                <i class="fas fa-calendar-alt date-icon"></i>
+                <input class="date-input-field" type="text" id="destinationdatepicker" placeholder="mm/dd/yyyy">
+            </div>
+            <p>Issues Explain</p>
+            <div class="select">
+                <div class="selectBtn" data-type="firstOption"><i class="fas fa-user"></i></div>
+                <div class="selectDropdown">
+                    <div class="option" data-type="firstOption"><i class="fas fa-user"></i>Emergency</div>
+                    <div class="option" data-type="secondOption"><i class="fas fa-user"></i>As Fast As Possible</div>
+                    <div class="option" data-type="thirdOption">I don'care about the time<i class="fas fa-user"></i></div>
+                </div>
+            </div>
+            <div class="email-input-container">
+                <input type="text" id="email" placeholder="Enter Your Email">
+                <i class="fas fa-envelope"></i>
+            </div>
+            
+        </div>
+        <div class="right">
+            <div class="trip-detail-container">
+                <div class="two-way-container">
+                    <h3 class="trip-detail-title">Information</h3>
+                    <table>
+                        <tr><td id="selectedIssue"></td><td id="selectedIssueValue">Before purchasing your ticket, please ensure accurate details. Clear information aids in addressing concerns efficiently. Thank you for choosing us. Note: Prices are fixed for your convenience.
+                        </td></tr>
+                    </table>
+                </div>
+                <hr>
+                <div class="price-container">
+                    <h3 class="trip-detail-title">Price</h3>
+                    <table>
+                        <tr><td>Base Price</td><td>RS 150</td></tr>
+                        <tr><td>Discount</td><td>66% = RS 51</td></tr>
+                        <tr><td>Total Price</td><td>CA Rs99</td></tr>
+                    </table>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+    <div class="buttons">
+        
+        <button type="button">Get Tickets</button>
+    </div>
+</div>
+<!-- partial -->
+  <script  src="scriptt.js"></script>
+  <script src="scriptt.js"></script>
+  <script src="ggh.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+</body>
+</html>

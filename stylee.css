@@ -1,0 +1,353 @@
+body {
+  background: #F0EDED;
+}
+
+
+
+body .navbar {
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.2);
+  background-color: $primary-color;
+  height: 70px;
+}
+
+body .navbar .companylogo {
+  padding: 5px 0 5px 10%;
+}
+
+body .container {
+  width: 75%;
+  margin: auto;
+  margin-bottom: 30px;
+}
+
+body .container .getquotetext {
+  font-weight: normal;
+  opacity: 0.8;
+}
+
+body .container .blocks {
+  display: flex;
+}
+
+body .container .blocks p {
+  opacity: 0.7;
+}
+
+body .container .blocks .left,
+body .container .blocks .right {
+  background-color: #fff;
+  width: 100%;
+}
+
+body .container .blocks .left {
+  margin-right: 20px;
+  background-color: transparent;
+}
+
+body .container .blocks .left .triptype {
+  width: 100%;
+  display: flex;
+}
+
+body .container .blocks .left .triptype > * {
+  flex: 1;
+}
+
+
+body .container .blocks .left .one-way-button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: $primary-color;
+  color: #fff;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+body .container .blocks .left .round-trip-button {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border: none;
+  background-color: #fff;
+  color: #000;
+  padding: 15px 15px;
+  cursor: pointer;
+}
+
+body .container .blocks .left .date-input-container {
+  width: 100%;
+}
+
+body .container .blocks .left .date-input-container i {
+  position: absolute;
+}
+
+body .container .blocks .left .date-icon {
+  padding: 20px;
+  z-index: 1;
+}
+
+body .container .blocks .left .date-input-field {
+  border: none;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 20px;
+  text-align: left;
+  padding-left: 55px;
+}
+
+body .container .blocks .left .fas {
+  color: $primary-color;
+  margin-right: 18px;
+  font-size: 20px;
+}
+
+body .container .blocks .left .select {
+  position: relative;
+  margin-bottom: 15px;
+}
+
+body .container .blocks .left .select .selectBtn {
+  background: var(--bg1);
+  padding: 20px;
+  box-sizing: border-box;
+  border-radius: 3px;
+  width: 100%;
+  cursor: pointer;
+  position: relative;
+  user-select: none;
+  background: #fff;
+}
+
+body .container .blocks .left .select .selectBtn::after {
+  content: "";
+  position: absolute;
+  top: 45%;
+  right: 15px;
+  width: 6px;
+  height: 6px;
+  transform: translateY(-50%) rotate(45deg);
+  border-right: 2px solid #666;
+  border-bottom: 2px solid #666;
+  transition: 0.2s ease;
+}
+
+body .container .blocks .left .select .selectBtn .toggle {
+  border-radius: 3px 3px 0 0;
+}
+
+body .container .blocks .left .select .selectBtn .toggle::after {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+body .container .blocks .left .select .selectDropdown {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  border-radius: 0 0 3px 3px;
+  overflow: hidden;
+  background: var(--bg1);
+  border-top: 1px solid #eee;
+  z-index: 1;
+  background: #fff;
+  transform: scale(1, 0);
+  transform-origin: top center;
+  visibility: hidden;
+  transition: 0.2s ease;
+}
+
+body .container .blocks .left .select .selectDropdown .option {
+  padding: 10px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+body .container .blocks .left .select .selectDropdown .option:hover {
+  background: #f8f8f8;
+}
+
+body .container .blocks .left .select .toggle {
+  visibility: visible;
+  transform: scale(1, 1);
+}
+
+body .container .blocks .right {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+body .container .blocks .right table {
+  padding: 20px;
+  text-align: left;
+}
+
+body .container .blocks .right table th {
+  opacity: 0.7;
+}
+
+body .container .blocks .right table td {
+  opacity: 0.6;
+}
+
+body .container .blocks .right .trip-detail-container {
+  padding: 20px;
+  padding-top: 16vh;
+}
+
+body .container .blocks .right .trip-detail-title {
+  font-size: 20px;
+  font-weight: normal;
+}
+
+body .container .buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+}
+.companylogo {
+  filter: drop-shadow(0px 0px 5px black); 
+  -webkit-filter: drop-shadow(0px 0px 5px black); 
+  text-shadow: 0 0 0.5em black; 
+}
+.one-way-button {
+  text-shadow: 2px 2px 4px rgb(0, 0, 0); /* Adjust the values as needed */
+}
+body .container .buttons button {
+  padding: 20px 0;
+  border: none;
+  width: 45%;
+  cursor: pointer;
+  background: #06f;
+  color: #fff;
+  border-radius: 5px;
+}
+.triptype .one-way-button {
+  color: black;
+}
+body .container .buttons button:nth-child(1) {
+  background: #e8435e;
+}
+
+body .container .buttons button:hover {
+  background: #333;
+}
+#email {
+  padding: 2vh 6vw; /* Adjust padding for responsiveness */
+  background-color: #fff;
+  display: block;
+  margin-top: 3vh;
+  width: 70%; /* Set width to 70% of the container */
+  height: 35px; /* Set height to 35px */
+}
+
+.email-input-container {
+  position: relative;
+}
+
+.email-input-container input[type="text"] {
+  padding-left: 15px; /* Adjust as needed */
+  height: 100%; /* Set height to 100% */
+}
+
+.email-input-container i {
+  position: absolute;
+  left: 20px; /* Adjust as needed */
+  top: 50%;
+  transform: translateY(-50%);
+  color: #000; /* Black color */
+}
+
+/* Adjust styles for smaller screens */
+@media (max-width: 768px) {
+  #email {
+    padding: 2vh 8vw; /* Adjust padding for smaller screens */
+    width: 80%; /* Adjust width for smaller screens */
+  }
+  
+  .email-input-container input[type="text"] {
+    padding-left: 10px; /* Adjust padding for smaller screens */
+  }
+  
+  .email-input-container i {
+    left: 15px; /* Adjust left position for smaller screens */
+  }
+}
+
+/* Adjust styles for even smaller screens */
+@media (max-width: 480px) {
+  #email {
+    padding: 2vh 4vw; /* Further adjust padding for very small screens */
+    width: 90%; /* Further adjust width for very small screens */
+  }
+  
+  .email-input-container input[type="text"] {
+    padding-left: 5px; /* Further adjust padding for very small screens */
+  }
+  
+  .email-input-container i {
+    left: 10px; /* Further adjust left position for very small screens */
+  }
+}
+
+
+@media screen and (max-width: 768px) {
+  .one-way-button {
+    display: block; /* Change the display property to block on smaller screens */
+    width: 100%; /* Set the width to 100% to make it full-width */
+  }
+}
+@media screen and (max-width: 677px) {
+  .right {
+      display: none;
+  }
+}
+
+@media(max-width: 1198px){
+  /* Your existing CSS */
+
+/* Checkbox Hack for Toggle */
+.menu-icon {
+  display: none;
+}
+
+.menu-icon span {
+  background-color: #fff;
+  display: block;
+  height: 3px;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  width: 25px;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(1) {
+  transform: translateY(6px) rotate(45deg);
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(2) {
+  opacity: 0;
+}
+
+#menu-toggle:checked + .menu-icon span:nth-child(3) {
+  transform: translateY(-6px) rotate(-45deg);
+}
+
+/* Navigation Links */
+.nav-links {
+  display: none;
+}
+
+#menu-toggle:checked ~ .nav-links {
+  display: block;
+}
+
+.nav-links ul {
+  padding: 0;
+  
+.navmargin: 0;
+}
+-links ul li {
+  list-style: none;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Other styles */
+
+}
