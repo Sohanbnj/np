@@ -7,16 +7,26 @@ html {
     scroll-behavior: smooth;
 }
 
-
 body {
     background-color: rgb(255, 255, 255);
     height: 400vh;
 }
+@media screen and (max-width: 660px) {
+    /* Add styles to adjust layout for smaller screens */
+    /* For example: */
+    body {
+        font-size: 14px;
+    }
+    .container {
+        width: 90%;
+    }
+}
+
 
 .head {
     height: 87vh;
     width: 100%;
-    background-image: url(background.jpg);
+    background-image: url(/image/background.jpg);
     background-color: linear-gradient(rgba(4, 9, 30, 80) rgba(4, 9, 30, 80)),;
     background-position: center center;
     background-size: cover;
@@ -423,7 +433,7 @@ h3 {
 }
 
 .klol {
-    background-image: url(nananananan.jpg);
+    background-image: url(/image/nananananan.jpg);
     background-color: linear-gradient(rgba(4, 9, 30, 80) rgba(4, 9, 30, 80)),;
     background-position: center center;
     background-size: cover;
@@ -767,12 +777,12 @@ h5 {
     }
 }
 
-@media(max-width: 515px) {
+@media(max-width: 610px) {
     /* Other CSS rules */
 
     /* Add this rule to hide vertical scrollbar */
     body {
-        overflow-y: hidden;
+        overflow-x: hidden;
     }
 }
 
@@ -782,11 +792,11 @@ h5 {
     }
 }
 
-@media(max-width: 729px) {
+@media(max-width: 610px) {
     /* Other CSS rules */
 
     /* Add this rule to hide vertical scrollbar */
     body {
-        overflow-y: auto;
+        overflow-x: hidden;
     }
 }
