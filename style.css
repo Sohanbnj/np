@@ -774,7 +774,7 @@ h5 {
 
     /* Add this rule to hide vertical scrollbar */
     body {
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 }
 
@@ -789,16 +789,7 @@ h5 {
 
     /* Add this rule to hide vertical scrollbar */
     body {
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 }
-@media screen and (max-width: 660px) {
-    /* Add styles to adjust layout for smaller screens */
-    /* For example: */
-    body {
-        font-size: 14px;
-    }
-    .container {
-        width: 100%;
-    }
-}
+
